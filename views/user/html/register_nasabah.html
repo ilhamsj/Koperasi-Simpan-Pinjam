@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registrasi Nasabah Baru</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-5 mb-5">
+            <h1 class="display-4">Registrasi Nasabah Baru</h1>   
+        </div> 
+        <div class="card mt-5">
+            <div class="card-header">
+                Isi data dengan lengkap
+            </div>
+            <div class="card-body">                
+                <form onSubmit="JavaScript:sendForm(event)" id="idForm">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="id-nik">NIK</label>
+                                <input type="text" id="id-nik" class="form-control" placeholder="No Induk Kependudukan">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="id-nama">Nama Lengkap Nasabah</label>
+                                <input type="text" id="id-nama" class="form-control" placeholder="Nama Lengkap Nasabah">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id-alamat">Alamat Sesuai KTP</label>
+                        <textarea id="id-alamat" rows="3" class="form-control" placeholder="Alamat"></textarea>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="id-tgl-masuk">Tanggal Masuk</label>
+                                <input type="date" id="id-tgl-masuk" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="id-jk">Jenis Kelamin</label>
+                            <select id="id-jk" class="custom-select">   
+                                <option>Laki-Laki</option>
+                                <option>Perempuan</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="id-no-telp">No Telp</label><br>
+                                <input type="number" id="id-no-telp" class="form-control" placeholder="No Telp">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="btnRegister" class="btn btn-outline-primary">Simpan</button>
+                    <button type="reset" id="btnHapus" class="btn btn-outline-primary">Hapus</button>
+                </form>
+            </div>
+            <div class="card-footer">
+                <p id="response"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../script/register_nasabah.js"></script>
+</body>
+</html>

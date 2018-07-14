@@ -1,0 +1,63 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Data Riwayat Simpanan</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../../assets/js/jquery.min.js"></script>
+
+    <!-- Tablesorter: required -->
+	<link href="../../assets/css/theme.default.css" rel="stylesheet">
+	<script src="../../assets/js/jquery.tablesorter.js"></script>
+    
+    <!-- Tablesorter: optional -->
+	<link rel="stylesheet" href="../../assets/css/jquery.tablesorter.pager.css">
+    <script src="../../assets/js/widget-pager.js"></script>
+    <script src="../../assets/js/widget-filter.js"></script>
+    
+</head>
+<body>
+    <div class="text-center mt-5 mb-5">
+        <h1 class="display-4">Data Riwayat Simpanan</h1>   
+    </div> 
+    <table border="1" id="table">
+        <thead>
+            <tr>
+                <th>Kode Simpanan</th>
+                <th>Nomor Pendaftaran</th>
+                <th>Jenis Simpanan</th>
+                <th>Saldo Awal</th>
+                <th>Tanggal Simpanan</th>
+                <th>Kredit</th>
+                <th>Total Saldo</th>
+                <th>Bunga</th>
+                <th>Jangka Waktu</th>
+                <th>Jenjang</th>
+                <th>Status</th>
+                <th></th>
+            </tr>  
+        </thead>
+        <tbody id="my-data">
+
+        </tbody>
+    </table>
+
+    <div class="pager">
+        <img src="../../assets/icons/first.png" class="first" alt="First" />
+        <img src="../../assets/icons/prev.png" class="prev" alt="Prev" />
+        <!-- the "pagedisplay" can be any element, including an input -->
+        <span class="pagedisplay" data-pager-output-filtered="{startRow:input} &ndash; {endRow} / {filteredRows} of {totalRows} total rows"></span>
+        <img src="../../assets/icons/next.png" class="next" alt="Next" />
+        <img src="../../assets//icons/last.png" class="last" alt="Last" />
+        <select class="pagesize" title="Select page size">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+        </select>
+    </div>
+    
+    <script src="../script/management_data_history_simpanan.js"></script>
+</body>
+
+</html>

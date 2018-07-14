@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Pinjaman Nasabah</title>
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/js/jquery-ui/jquery-ui.min.css">
+    <script src="../../assets/js/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Tablesorter: required -->
+	<link href="../../assets/css/theme.default.css" rel="stylesheet">
+	<script src="../../assets/js/jquery.tablesorter.js"></script>
+    
+    <!-- Tablesorter: optional -->
+	<link rel="stylesheet" href="../../assets/css/jquery.tablesorter.pager.css">
+    <script src="../../assets/js/widget-pager.js"></script>
+    <script src="../../assets/js/widget-filter.js"></script>
+    
+</head>
+<body>
+    <h1>Detail Pinjaman Nasabah</h1>
+    <br>
+
+    <div id="switch-jenis-pinjaman"></div><div id="switch-sub-jenis-pinjaman"></div><br>
+    <div id="form-tambah-jenis-pinjaman"></div><br>
+
+    <div id="form-bayar-pinjaman"></div><br>
+    <label id="id-anggota" style="display: none"></label>
+    <label id="id-jenis-pinjaman" style="display: none"></label>
+    <label id="kode-jenis" style="display: none"></label>
+    Nomor Pendaftaran : <label id="no"></label><br>
+    Kode Pinjaman : <label id="kode"></label><br>
+    Jenis Pinjaman : <label id="nama-jenis-pinjaman"></label><br>
+    NIK Anggota : <label id="nik"></label><br>
+    Nama Anggota : <label id="nama"></label><br>
+    Alamat Anggota : <label id="alamat"></label><br>
+    Tanggal Pinjam : <label id="tanggal"></label><br>
+    Jangka Waktu : <label id="jangka_waktu"></label><br>
+    Jumlah Pinjaman : <label id="jumlah"></label><br>
+    Angsuran Pokok : <label id="angsuran_pokok"></label><br>
+    Bunga : <label id="bunga"></label>%<br>
+    IPTW : <label id="iptw"></label>%<br>
+    Total Angsuran : <label id="total_angsuran"></label><br>
+    Jumlah Cicilan : <label id="jml_cicilan"></label><br>
+    Sisa Angsuran : <label id="sisa_angsuran"></label><br>
+    <br>
+    <div id="form"></div>
+
+    <h3>Angsuran</h3>
+    <table border="1" id="table" class="tablesorter">
+        <thead>
+            <tr>
+                <th>Angsuran Ke</th>
+                <th>Angsuran</th>
+                <th>Bunga</th>
+                <th>Total Bayar</th>
+                <th>Tanggal Bayar</th>
+                <th>IPTW</th>
+                <th>Jumlah Bayar</th>
+                <th>Sisa Bayar</th>
+                <th></th>
+            </tr>  
+        </thead>
+        <tbody id="my-data">
+
+        </tbody>
+    </table>
+    <div class="pager">
+        <img src="../../assets/icons/first.png" class="first" alt="First" />
+        <img src="../../assets/icons/prev.png" class="prev" alt="Prev" />
+        <!-- the "pagedisplay" can be any element, including an input -->
+        <span class="pagedisplay" data-pager-output-filtered="{startRow:input} &ndash; {endRow} / {filteredRows} of {totalRows} total rows"></span>
+        <img src="../../assets/icons/next.png" class="next" alt="Next" />
+        <img src="../../assets//icons/last.png" class="last" alt="Last" />
+        <select class="pagesize" title="Select page size">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+        </select>
+        
+    </div>
+    <script src="../../../node_modules/moment/moment.js"></script>
+    <script src="../script/profil_pinjaman_nasabah.js"></script>
+</body>
+</html>

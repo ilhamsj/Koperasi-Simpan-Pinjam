@@ -1,0 +1,121 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Pinjaman Nasabah</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../../assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/js/jquery-ui/jquery-ui.min.css">
+    <script src="../../assets/js/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Tablesorter: required -->
+	<link href="../../assets/css/theme.default.css" rel="stylesheet">
+	<script src="../../assets/js/jquery.tablesorter.js"></script>
+    
+    <!-- Tablesorter: optional -->
+	<link rel="stylesheet" href="../../assets/css/jquery.tablesorter.pager.css">
+    <script src="../../assets/js/widget-pager.js"></script>
+    <script src="../../assets/js/widget-filter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mt-5 mb-5">
+            <h1 class="display-4">Detail & Tambah Simpanan Nasabah</h1>   
+        </div>             
+        <table class="table">
+            <tr>
+                <th>Nomor Pendaftaran </th>
+                <th>Kode Simpanan</th>
+                <th>NIK Anggota</th>
+                <th>Nama Anggota</th>
+                <th>Alamat Anggota</th>
+                <th>Jenis Simpanan</th>
+                <th>Saldo Awal</th>
+                <th>Tanggal Simpan</th>
+                <th>Kredit</th>
+                <th>Saldo</th>
+                <th>Bunga</th>
+                <th>Jangka Waktu</th>
+                <th>Jenjang</th>
+            </tr>
+            <tr>
+                <td><label id="no"></label></td>
+                <td><label id="kode"></label></td>
+                <td><label id="nik"></label></td>
+                <td><label id="nama"></label></td>
+                <td><label id="alamat"></label></td>
+                <td><label id="jenis"></label></td>
+                <td><label id="saldo-awal"></label></td>
+                <td><label id="tanggal"></label></td>
+                <td><label id="kredit"></label></td>
+                <td><label id="saldo-akhir"></label></td>
+                <td><label id="bunga"></label></td>
+                <td><label id="jangka_waktu"></label></td>
+                <td><label id="jenjang"></label></td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Tambah Saldo</div>
+                    <div class="card-body">    
+                        <div id="switch-jenis-simpanan"></div><div id="switch-sub-jenis-simpanan"></div><br>
+                        <div id="form-tambah-jenis-simpanan"></div><div id="form-ambil-simpanan"></div><br>
+                
+                        <label id="id-anggota" style="display: none"></label>
+                        <label id="id-jenis" style="display: none"></label>
+                        <label id="id-kode-jenis" style="display: none"></label>
+                    </div>
+                </div>    
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Tambah Saldo</div>
+                    <div class="card-body">
+                        <div id="form"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>  
+        
+        <div class="text-center mt-5 mb-5">
+            <h3 class="display-4">Riwayat Simpanan</h3>   
+        </div>  
+        <table border="1" id="table" class="tablesorter">
+            <thead>
+                <tr id="tbhead">
+                    <th>No Pendaftaran</th>
+                    <th>Kode Simpanan</th>
+                    <th>Jenis Simpanan</th>
+                    <th>Saldo Awal</th>
+                    <th>Tanggal</th>
+                    <th>Kredit</th>
+                    <th>Total Saldo</th>
+                    <th>Status</th>
+                </tr>  
+            </thead>
+            <tbody id="my-data">
+
+            </tbody>
+        </table>
+        <div class="pager">
+            <img src="../../assets/icons/first.png" class="first" alt="First" />
+            <img src="../../assets/icons/prev.png" class="prev" alt="Prev" />
+            <!-- the "pagedisplay" can be any element, including an input -->
+            <span class="pagedisplay" data-pager-output-filtered="{startRow:input} &ndash; {endRow} / {filteredRows} of {totalRows} total rows"></span>
+            <img src="../../assets/icons/next.png" class="next" alt="Next" />
+            <img src="../../assets//icons/last.png" class="last" alt="Last" />
+            <select class="pagesize" title="Select page size">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="all">All Rows</option>
+            </select>
+            
+        </div>
+  
+    <script src="../../../node_modules/moment/moment.js"></script>
+    <script src="../script/profil_simpanan_nasabah.js"></script>
+</body>
+</html>

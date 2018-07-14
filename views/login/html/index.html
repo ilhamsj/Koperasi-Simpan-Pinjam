@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/floating-labels.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form onSubmit="JavaScript:sendForm(event)" id="loginForm" class="form-signin">
+                <div class="text-center mb-4">
+                  <img class="mb-4" src="../../assets/images/logo.png" alt="" width="72" height="72">
+                  <h1 class="h3 mb-3 font-weight-normal">KSP Tani Makmur</h1>
+                  <p>Koprasi Simpan Pinjam Tani Makmur</p>
+                </div>
+          
+                <div class="form-label-group">
+                  <input id="user"  type="text" id="user" class="form-control" value="admin" placeholder="Username" required autofocus>
+                  <label for="user">Username</label>
+                </div>
+          
+                <div class="form-label-group">
+                  <input id="pass" type="password" id="inputPassword" class="form-control"  value="123" placeholder="Password" required>
+                  <label for="inputPassword">Password</label>
+                </div>
+          
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button id="submit" class="btn btn-outline-primary btn-lg btn-block" type="submit">Sign in</button>
+                <p class="mt-5 mb-3 text-muted text-center">&copy; 2018</p>
+
+                <p id="response"></p>
+                
+        </form>        
+
+    </div>
+
+    
+
+    <script src="../script/loginForm.js"></script>
+</body>
+
+</html>

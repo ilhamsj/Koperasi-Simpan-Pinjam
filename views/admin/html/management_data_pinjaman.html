@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Management Data Pinjaman</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../../assets/js/jquery.min.js"></script>
+
+    <!-- Tablesorter: required -->
+	<link href="../../assets/css/theme.default.css" rel="stylesheet">
+	<script src="../../assets/js/jquery.tablesorter.js"></script>
+    
+    <!-- Tablesorter: optional -->
+	<link rel="stylesheet" href="../../assets/css/jquery.tablesorter.pager.css">
+    <script src="../../assets/js/widget-pager.js"></script>
+    <script src="../../assets/js/widget-filter.js"></script>
+    
+</head>
+<body>
+    <div class="text-center mt-5 mb-5">
+            <h1 class="display-4">Management Data Pinjaman</h1>   
+        </div> 
+    
+
+    <table border="1" id="table">
+        <thead>
+            <tr>
+                <th>Kode Pinjaman</th>
+                <th>Nomor Pendaftaran</th>
+                <th>Nama Anggota</th>
+                <th>Jenis Pinjaman</th>
+                <th>Tanggal Pinjam</th>
+                <th>Jangka Waktu</th>
+                <th>Jumlah Pinjaman</th>
+                <th>Angsuran Pokok</th>
+                <th>Bunga Angsuran</th>
+                <th>Total Angsuran</th>
+                <th></th>
+            </tr>  
+        </thead>
+        <tbody id="my-data">
+
+        </tbody>
+    </table>
+
+    <div class="pager">
+        <img src="../../assets/icons/first.png" class="first" alt="First" />
+        <img src="../../assets/icons/prev.png" class="prev" alt="Prev" />
+        <!-- the "pagedisplay" can be any element, including an input -->
+        <span class="pagedisplay" data-pager-output-filtered="{startRow:input} &ndash; {endRow} / {filteredRows} of {totalRows} total rows"></span>
+        <img src="../../assets/icons/next.png" class="next" alt="Next" />
+        <img src="../../assets//icons/last.png" class="last" alt="Last" />
+        <select class="pagesize" title="Select page size">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="all">All Rows</option>
+        </select>
+    </div>
+    
+    <script src="../script/management_data_pinjaman.js"></script>
+</body>
+
+</html>
