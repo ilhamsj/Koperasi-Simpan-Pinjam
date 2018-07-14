@@ -1,7 +1,7 @@
 # KSP : Koprasi Simpan Pinjam
-* `<npm install electron>`
-* `<npm install>`
-* `<npm start>`  
+* `npm install electron`
+* `npm install`
+* `npm start`  
 System pendukung yang sangat diperlukan sehingga dapat digunakan untuk memaksimalkan pelayanan pada KUD
 
 ## [Login Admin & Kasir](https://github.com/ilhamsj/Koperasi-Simpan-Pinjam/blob/master/views/login/script/loginForm.js)
