@@ -1,6 +1,4 @@
 # KSP : Koprasi Simpan Pinjam
-
-<img src="views/assets/images/logo.png" align="left" hspace="10" vspace="6">
 System pendukung yang sangat diperlukan sehingga dapat digunakan untuk memaksimalkan pelayanan pada KUD
 
 ## [Login Admin & Kasir](https://github.com/ilhamsj/Koperasi-Simpan-Pinjam/blob/master/views/login/script/loginForm.js)
